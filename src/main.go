@@ -27,7 +27,7 @@ func main() {
 	r := mux.NewRouter()
 
 	// Define your HTTP routes using the router
-	r.HandleFunc("/users", listUsersHandler).Methods("GET")
+	r.HandleFunc("/userslist", listUsersHandler).Methods("GET")
 	r.HandleFunc("/user/{id}", getUserHandler).Methods("GET")
 	r.HandleFunc("/user", createUserHandler).Methods("POST")
 	r.HandleFunc("/user/{id}", updateUserHandler).Methods("PUT")
